@@ -1,0 +1,315 @@
+/*Estilo para el cuerpo de la pagina*/
+body {
+    font-family: 'Helvetica', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      font-size: 14px; /*Tamaño de fuente más pequeño para dispositivos pequeños */
+    }
+  }
+
+  
+/*Estilo para la cabecera*/
+header {
+    background-color: #000000;
+    padding: 10px;
+    text-align: center;
+}
+/*Estilo para el menú de navegación*/
+nav {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+      text-align: center; /*Centrar el contenido del encabezado*/
+    }  
+    nav {
+      display: block; /*Cambia la visualización del menú a bloque*/
+    }
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /*Cambiar la dirección del flexbox a columna*/
+    align-items: center; /*Centrar horizontalmente*/
+}
+
+nav li {
+    margin: -5px 0; /*Ajusta el margen para la separación entre elementos*/
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    font-size: 14px; 
+    text-decoration: none; /*Quita el subrayado del enlace*/
+    color: #ffffff;   
+
+}
+/*Cambia la pasar por encima del enlace*/
+nav a:hover {
+    color: #ff1616; 
+}
+/*Estilo para el elemento del navegador correspondiete a la pagina actual*/
+nav a.activa {
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+/*Estilo para el pie de pagina*/
+footer {
+    background-color: #000000;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;   
+    font-size: 10px;
+}
+
+/*Estilo para el contenedor principal*/
+main  {
+    color: #1e1d1d; 
+    font-family:'Helvetica', Arial, sans-serif;
+    margin: 90px;
+    padding: 0;
+    text-align: justify; /*Justifica el texto dentro de main*/
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+      max-width: 100%; /*Hace que el contenido principal ocupe todo el ancho disponible*/
+    }
+  }
+
+/*Estilo para el contenedor principal de la pagina tipos de robots*/
+main.main-tipos-robots {
+    max-width: 50%; /* Puedes ajustar este valor según tus necesidades */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+@media only screen and (max-width: 600px) {
+    main.main-tipos-robots {
+      max-width: 100%; /* Hacer que el contenido principal ocupe todo el ancho disponible */
+    }
+  }
+
+/*Estilo para el contenedor principal de la pagina robots de ficcion*/
+main.main-robots-ficcion {
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    color: #1e1d1d; /* Color del texto: negro */
+    font-family: 'Helvetica', Arial, sans-serif;
+    padding: 0;
+    text-align: left; 
+    margin: 90px;
+}
+
+@media only screen and (max-width: 600px) {
+    main.main-robots-ficcion {
+      max-width: 100%; /* Hacer que el contenido principal ocupe todo el ancho disponible */
+    }
+  }
+
+/*Estilo para negrita*/
+.bold {
+    font-weight: bold;
+}
+
+/*Estilo para cursiva*/
+.cursiva {
+    font-style: italic;
+}
+
+/*Estilos para elos titulos*/
+h1 {
+    font-family: 'Helvetica', Arial, sans-serif; /* Helvetica como primera opción, y si no está disponible..Arial, sans-serif */
+}
+
+.titulo-principal {
+    font-size: 35px; /*Tamaño mas grande para el principal*/
+    text-align: center; /*Texto centrado*/
+  }
+
+.titulo-secundario {
+    font-size: 30px; /*Tamaño de la letra algo mas pequeño que el principal */
+    text-align: left; /*Texto alineado a la izquierda*/
+}
+
+/*Estilo para los enlaces*/
+a.enlace-rojo{
+    color: #ff1616;
+    text-decoration: none; /*Quita el subrayado*/
+}
+
+/*Estilo para el enlace al pasar el ratón*/
+a.enlace-rojo:hover {
+    text-decoration: underline; /*Subrayar al pasar el ratón*/
+}
+
+/*Estilo para las imagenes*/
+.imagenes {
+    width: 100%; /*Contenedor tenga un ancho del 100% del contenedor padre.*/
+    max-width:auto; /*La imagen se ajustará al ancho de la pantalla */
+    position: relative; 
+}
+
+.imagenes img {
+    width: 100%;  /*La imagen ocupa el 100% del ancho de su contenedor padre*/
+    height: auto;  /*Altura de la imagen se ajusta automáticamente al cambiar el ancho*/   
+}
+
+.imagenes-ficcion {
+    width: 100%;
+    height: auto;
+}
+
+.imagenes_ficcion img {
+    width: 30%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+
+/*Estilo para el contenedor de videos*/
+.videos {
+    max-width: 800px; /*Ajusta el ancho  a 800px*/
+    margin: 0 auto; /*Centra el contenedor horizontalmente*/
+}
+
+.video-robot {
+    display: block; /*Cambiado de inline-block a block*/
+    margin: 0 auto; /* entra el elemento horizontalmente*/
+    width: 100%; 
+}
+
+/*Estilo para el titulo de las imagenes*/
+.titulo-imagen {
+    position: relative; /*Cambiado de absolute a relative*/
+    padding: 5px;
+    font-size: 12px;
+    margin: 0;
+    text-align: right; /*Alinea el texto a la derecha*/
+}
+
+/*Estilo para el titulo de las imagenes*/
+.titulo-imagen-ficcion {
+    position: relative; 
+    padding: 5px;
+    font-size: 12px;
+    margin: 0;
+    text-align: center; /*Centra el texto*/
+}
+
+/*Estilo para los parrafos*/
+p{   
+    line-height: 1.5; /*Ajusta el espaciado entre líneas*/
+    font-size: 16px;
+}
+
+/*Estilo para las listas*/
+ul {
+    list-style-type: square; /*Pone cuadraditos en las listas*/
+    padding-left: 10; 
+}
+
+li {
+    margin-bottom: 10px; /*Agrega un espacio de 10px entre los elementos de la lista*/
+}
+
+/*Estilo para la linea del articulo*/
+.articulo-linea {
+    background-color: #c0bdbd; /*Fondo gris claro */
+    text-align: center; 
+    font-size: 14px; 
+    padding: 2px; 
+    margin: 0; 
+}
+
+/*Estilo para la biografia*/
+.biografia {
+    font-size: 14px; 
+    margin: 0 200px; 
+    line-height: 1.5; /*Ajusta el espaciado entre líneas*/
+}
+
+/*Estilo para la iamgen de la autora*/
+.imagen_autor {
+    text-align: center; /*Centra la imagen horizontalmente*/
+}
+
+.imagen_autor img {
+    width: auto; /*Ajusta el tamaño real de la imagen*/
+    height: auto; /*Ajusta la altura automáticamente*/
+    max-width: 100%; /*Evita que la imagen se mas ancha que el contenedor*/
+    max-height: 100%; /*Evita que la imagen tenga mas altura que el contenedor*/
+    display: inline-block; /*La imagen se comporta como un elemento en línea*/
+    border-radius: 50%; /*Ajusta los bordes redondeados */
+}
+
+/*Estilo para el contenedor en la pagina tipo de robots*/
+.div_tipos{
+    background-color: #f2f2f2; /* Fondo gris clarito */
+    padding: 10px; /* Ajusta el espacio interno según tus necesidades */
+    margin: 10px 0; /* Ajusta el espacio externo según tus necesidades */
+    text-align: left; 
+    border-left: 5px solid #ff0000; /* Línea lateral izquierda de color rojo */
+}
+
+/*Estilo para los parrafos en la pagina tipos de robots*/
+.div_tipos p{
+    font-size: 16px; /* Tamaño del texto */
+    line-height: 1.5; /* Espaciado entre líneas */
+    margin: 0 5px; /* Margen izquierdo y derecho de 5px */
+}
+
+/*Estilo para la lista anidada en la pagina tipos de robots*/
+.div_tipos_lista {
+    font-size: 16px; /* Tamaño del texto */
+    line-height: 1.5; /* Espaciado entre líneas */
+    text-align: left; 
+}
+
+.div_tipos_lista ul {
+    list-style: none; /* Quita los estilos de lista por defecto */
+    padding: 0; /* Elimina el relleno predeterminado de la lista */
+}
+
+.div_tipos_lista ul ul {
+    list-style-type: square; /* Tipo de marcador para la lista anidada */
+    margin-top: 5px; /* Espacio superior entre la lista principal y la anidada */
+    margin-bottom: 0; /* Elimina el espacio inferior */
+    margin-left: 20px; /* Ajusta la sangría de la lista anidada */
+}
+
+.div_tipos_lista ul ul > li{
+    margin-bottom: 5px;
+    margin-left: 20px; /* Ajusta la sangría de la lista anidada */
+    list-style-type: square; /* Tipo de marcador para la lista anidada */
+    
+}
+.div_tipos_lista > ul > li {
+    padding-left: 40px;
+    background: url('Materiales/img/icon-robot.png') no-repeat left top;
+    margin-bottom: 20px; /* Espacio entre elementos de la lista */
+}
+
+.div_tipos_lista > ul > li > ul {
+    list-style-type: square;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.div_tipos_lista > ul > li > ul > li {
+    margin-bottom: 5px;
+}
+
+
